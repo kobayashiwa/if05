@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <title>条件分岐 - else if</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    　<div class="Language-warpper">
+        <div class="container">
+            <h3>Select a language and then click any image to hear the word spoken aloud.</h3>
+            <div class="WordButtonsGrid">
+                <!-- WordButtons -->
+                <div class="WordButtons">
+                    <div class="WordButton">
+                        <img src="image/crab.png" alt="crab">
+                        <p class="keyword">crab</p>
+                        <p class="voice">krˈæb</p>
+                    </div>
+                    <div class="WordButton">
+                        <img src="image/tote-bag.png" alt="tote bag">
+                        <p class="keyword">tote bag</p>
+                        <p class="voice">tóʊt - bˈæg</p>
+                    </div>
+                    <div class="WordButton">
+                        <img src="image/fried-chicken.png" alt="fried chicken">
+                        <p class="keyword">fried chicken</p>
+                        <p class="voice">frάɪd - tʃík(ə)n</p>
+                    </div>
+                    <div class="WordButton">
+                        <img src="image/meat.png" alt="meat">
+                        <p class="keyword">meat</p>
+                        <p class="voice">míːt</p>
+                    </div>
+                    <div class="WordButton">
+                        <img src="image/fish.png" alt="fish">
+                        <p class="keyword">fish</p>
+                        <p class="voice">fíʃ</p>
+                    </div>
+                    <div class="WordButton">
+                        <img src="image/potato-chips.png" alt="potato chips">
+                        <p class="keyword">potato chips</p>
+                        <p class="voice">pətéɪṭoʊ - tʃɪps</p>
+                    </div>
+                    <div class="WordButton">
+                        <img src="image/starfish.png" alt="starfish">
+                        <p class="keyword">starfish</p>
+                        <p class="voice">ˈstɑˌrfɪʃ</p>
+                    </div>
+                    <div class="WordButton">
+                        <img src="image/shell.png" alt="shell">
+                        <p class="keyword">shell</p>
+                        <p class="voice">ʃél</p>
+                    </div>
+                    <div class="WordButton">
+                        <img src="image/sunglasses.png" alt="sunglasses">
+                        <p class="keyword">sunglasses</p>
+                        <p class="voice">ˈsʌˌnglæsɪz</p>
+                    </div>
+                    <div class="WordButton">
+                        <img src="image/goggles.png" alt="goggles">
+                        <p class="keyword">goggles</p>
+                        <p class="voice">ˈgɑ:gʌlz</p>
+                    </div>
+                    <div class="WordButton">
+                        <img src="image/sun-cream.png" alt="sun cream">
+                        <p class="keyword">sun cream</p>
+                        <p class="voice">sˈʌn - kríːm</p>
+                    </div>
+                    <div class="WordButton">
+                        <img src="image/beach-sandal.png" alt="beach sandal">
+                        <p class="keyword">beach sandal</p>
+                        <p class="voice">bíːtʃ - sˈændl</p>
+                    </div>
+                    <div class="WordButton">
+                        <img src="image/milk.png" alt="milk">
+                        <p class="keyword">milk</p>
+                        <p class="voice">mílk</p>
+                    </div>
+                    <div class="WordButton">
+                        <img src="image/apple.png" alt="apple">
+                        <p class="keyword">apple</p>
+                        <p class="voice">ˈæpl</p>
+                    </div>
+                    <div class="WordButton">
+                        <img src="image/cheese.png" alt="cheese">
+                        <p class="keyword">cheese</p>
+                        <p class="voice">tʃíːz</p>
+                    </div>
+                    <div class="WordButton">
+                        <img src="image/jam.png" alt="jam">
+                        <p class="keyword">jam</p>
+                        <p class="voice">dʒˈæm</p>
+                    </div>
+                    <div class="WordButton">
+                        <img src="image/carrot.png" alt="carrot">
+                        <p class="keyword">carrot</p>
+                        <p class="voice">kˈærət</p>
+                    </div>
+                    <div class="WordButton">
+                        <img src="image/broccoli.png" alt="broccoli">
+                        <p class="keyword">broccoli</p>
+                        <p class="voice">brάkəli</p>
+                    </div>
+                    <div class="WordButton">
+                        <img src="image/tomato.png" alt="tomato">
+                        <p class="keyword">tomato</p>
+                        <p class="voice">təméɪṭoʊ</p>
+                    </div>
+                    <div class="WordButton">
+                        <img src="image/banana.png" alt="banana">
+                        <p class="keyword">banana</p>
+                        <p class="voice">bənˈænə</p>
+                    </div>
+                    <div class="WordButton">
+                        <img src="image/wine.png" alt="wine">
+                        <p class="keyword">wine</p>
+                        <p class="voice">wάɪn</p>
+                    </div>
+                    <div class="WordButton">
+                        <img src="image/pineapple.png" alt="pineapple">
+                        <p class="keyword">pineapple</p>
+                        <p class="voice">ˈpaɪnæpəl</p>
+                    </div>
+                    <div class="WordButton">
+                        <img src="image/watermelon.png" alt="watermelon">
+                        <p class="keyword">watermelon</p>
+                        <p class="voice">ˈwɔtɝˌmɛlʌn</p>
+                    </div>
+                    <div class="WordButton">
+                        <img src="image/juice.png" alt="juice">
+                        <p class="keyword">juice</p>
+                        <p class="voice">dʒúːs</p>
+                    </div>
+                </div>
+                <!-- WordButtons -->
+            </div>
+        </div>
+    </div>
+    
+<script>
+    
+    const age = 17;
+    if (age >= 20) {
+        console.log ("私は20歳以下です");
+    } else if (age >= 10) {
+        console.log ("私は20歳以下ですが、10歳以上です");
+    } else {
+        console.log ("私は10歳未満です");
+    }
+
+    const price = 667;
+    if (price >= 2200) {
+        console.log ("この本は、予算以内です");
+    } else if (price >= 655) {
+        console.log ("この本は、予算以内ですがギリギリです");
+    } else {
+        console.log ("この本は、予算外です");
+    }
+    
+</script>
+
+</body>
+</html>
